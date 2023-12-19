@@ -11,7 +11,7 @@ export function SocialBtns(){
             <a href="https://www.instagram.com/danton.ferrari/">
                 <InstaIcon/>
             </a>
-            <a href="www.linkedin.com/in/danton-gabriel-ferrari-25859621b">
+            <a href="https://br.linkedin.com/in/danton-gabriel-ferrari-25859621b">
                 <LinkedinIcon/>
             </a>
             <a href="https://github.com/danton-ferrari">
