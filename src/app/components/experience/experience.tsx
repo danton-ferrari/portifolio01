@@ -59,6 +59,30 @@ export function Experience() {
         </div>
         <div className="experience-language">
           <Image
+            src="/html.png"
+            alt="Java Logo"
+            width={40}
+            height={40}
+            priority
+          />
+          <div className="experience-unit">
+            <div className="experience-measure measure-1">3 mese</div>
+          </div>
+        </div>
+        <div className="experience-language">
+          <Image
+            src="/css.png"
+            alt="Java Logo"
+            width={40}
+            height={40}
+            priority
+          />
+          <div className="experience-unit">
+            <div className="experience-measure measure-1">3 mese</div>
+          </div>
+        </div>
+        <div className="experience-language">
+          <Image
             src="/python.png"
             alt="Python Logo"
             width={40}
