@@ -6,7 +6,7 @@ import "./experience.scss";
 export function Experience() {
   return (
     <div className="experience">
-      <SectionTitle text="Experiencia" />
+      <SectionTitle text="Experiência" />
       <p></p>
       <div className="experience-time">
         <div className="experience-language">
