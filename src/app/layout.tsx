@@ -9,7 +9,7 @@ const inter = Poppins({
 export const metadata = {
   title: "Danton Ferrari",
   description:
-    "Danton Ferrari é estudante de análise e desenvolvimento de sistemas e de mecatrônica...",
+    "Danton Ferrari é estudante de análise e desenvolvimento de sistemas...",
   icons: {
     icon: ["/aba.ico"],
   },
