@@ -14,8 +14,7 @@ export function Info() {
         <span>🎓</span>
         <span>
           Análise e Desenvolvimento de Sistemas - Centro Universitário
-          Internacional Uninter; Mecatrônica - Centro de Formação Profissional
-          Serviço Nacional de Aprendizagem Industrial Carlos Tannhauser
+          Internacional Uninter
         </span>
       </div>
     </div>
