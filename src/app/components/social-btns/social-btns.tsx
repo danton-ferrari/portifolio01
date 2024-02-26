@@ -17,7 +17,7 @@ export function SocialBtns() {
       <a href="https://github.com/danton-ferrari">
         <GuithubIcon />
       </a>
-      <a href="https://twitter.com/g_danton7431">
+      <a href="https://twitter.com/FerrariDanton">
         <TwitterIcon />
       </a>
     </div>
