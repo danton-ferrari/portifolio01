@@ -7,7 +7,6 @@ export function Experience() {
   return (
     <div className="experience">
       <SectionTitle text="Experiência" />
-      <p></p>
       <div className="experience-time">
         <div className="experience-language">
           <Image

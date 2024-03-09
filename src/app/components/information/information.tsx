@@ -11,10 +11,12 @@ export function Info() {
       </div>
       <SectionTitle text="Educação" />
       <div className="educational-info">
-        <span>🎓</span>
-        <span>
-          Análise e Desenvolvimento de Sistemas - Centro Universitário
-          Internacional Uninter
+        <span className="curso">
+          <p>
+            <span>🎓</span>
+            Análise e Desenvolvimento de Sistemas - Centro Universitário
+            Internacional Uninter
+          </p>
         </span>
       </div>
     </div>
