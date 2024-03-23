@@ -13,9 +13,9 @@ export function Info() {
       <div className="educational-info">
         <span className="curso">
           <p>
-            <span>🎓</span>
-            Análise e Desenvolvimento de Sistemas - Centro Universitário
-            Internacional Uninter
+            Análise e Desenvolvimento de Sistemas
+            <br />
+            Centro Universitário Internacional Uninter
           </p>
         </span>
       </div>
