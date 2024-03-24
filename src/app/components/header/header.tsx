@@ -10,13 +10,7 @@ export function Header() {
           Systems Developer<br></br>
         </h2>
       </div>
-      <Image
-        src="/Me.png"
-        alt="Vercel Logo"
-        width={325}
-        height={277}
-        priority
-      />
+      <Image src="/Me.png" alt="Eu" width={325} height={277} priority />
     </div>
   );
 }
