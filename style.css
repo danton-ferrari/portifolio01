@@ -31,19 +31,23 @@ h3 {
 }
 
 .container {
-  padding: 0px 0 40px 0;
   display: grid;
   grid-gap: 24px;
   gap: 24px;
   justify-items: center;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(6, auto);
 }
+
+.container footer {
+  grid-row-start: 6;
+  grid-row-end: 6;
+  width: 100%;
+}
+
 .container .buttons {
   flex-direction: column;
   gap: 24px;
   width: 100%;
-  grid-row-start: 5;
-  grid-row-end: 5;
 }
 
 .container .buttons,
@@ -72,55 +76,50 @@ h3 {
   transition: all 0.4s ease-out;
 }
 
-.nav {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 100%;
+.container nav {
   background: linear-gradient(90deg, #000177 2.62%, #006bcb 93.38%);
-  height: 40px;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-.nav .risco {
-  margin: auto;
-}
-
-div.risco {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  translate: 0 -72px;
   display: flex;
-  flex-direction: column;
-  width: 0.5px;
-  height: 20px;
-  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+  height: 50px;
+  transition: 0.3s;
 }
 
-.nav2 {
+nav.visible {
+  justify-content: center;
+  top: 0;
+  translate: 0;
+}
+
+.container .nav-items {
   display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.nav2 a:hover {
+.container .nav-items a:hover {
   font-size: 22px;
   font-weight: 400;
 }
 
-.nav2 a {
-  display: flex;
-  font-weight: 300;
-  font-size: 20px;
+.container nav a {
   -webkit-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   list-style-type: none;
   text-decoration: none;
   color: var(--text-primary);
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 @media (min-width: 1008px) {
   .container {
-    padding: 0;
     height: 100vh;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 60% 35%;
@@ -129,19 +128,23 @@ div.risco {
     gap: 24px;
   }
 
-  .container .nav {
+  .container header {
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
-    justify-content: flex-start;
   }
 
+  /* nav {
+    top: 0;
+    translate: 0;
+    display: flex;
+    justify-content: start;
+  } */
+
   .container .header {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    justify-content: center;
   }
 
   .container .infos {
@@ -150,37 +153,38 @@ div.risco {
     grid-row-start: 2;
     grid-row-end: 2;
     justify-content: center;
-    padding-bottom: 10px;
   }
 
   .container .experience {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
     justify-content: flex-end;
   }
 
-  .container .buttons {
-    grid-column-start: 2;
+  .container footer {
+    grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 3;
-    padding-bottom: 5px;
-    justify-content: flex-end;
   }
 
-  .container .header,
+  .container .buttons {
+    padding-bottom: 5px;
+  }
+
   .container .experience {
     padding-left: 15px;
   }
 }
 
 .header {
+  padding-top: 65px;
   display: flex;
   flex-direction: column;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 1;
+  /* grid-row-end: 1; */
   gap: 24px;
 }
 
@@ -237,8 +241,8 @@ div.risco {
   align-items: center;
   max-width: 500px;
   gap: 24px;
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
 }
 
 .experience p {
@@ -362,8 +366,8 @@ div.risco {
 
 .infos {
   max-width: 500px;
-  grid-row-start: 4;
-  grid-row-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 5;
 }
 
 .infos,
